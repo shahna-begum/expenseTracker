@@ -1,0 +1,22 @@
+.filter-div-wrapper {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.8rem 0 1rem;
+  margin: 1rem 0 2rem;
+}
+.filter-heading {
+  color: white;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+.filter-dropdown {
+  text-align: right;
+}
+.filter-div-wrapper select {
+  padding: 0.7rem 4rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}

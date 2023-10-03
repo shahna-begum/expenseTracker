@@ -1,0 +1,105 @@
+.expense-form-wrapper>form:first-child {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  background: #680cbb;
+  border-radius: 0.8rem;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 7px 21px -13px white;
+}
+
+.expense-form-wrapper .form-group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1.7rem;
+}
+
+.expense-form-wrapper .form-control {
+  height: 47px;
+  max-width: 378px;
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #ffffff8a;
+  outline: 0;
+  box-shadow: 0px 6px 14px -9px white;
+  font-size: 1.5rem;
+  padding: 0.4rem 1rem;
+  display: block;
+  padding-left: 6rem;
+  box-sizing: border-box;
+}
+
+.expense-form-wrapper label {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.input-icon-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.input-icon-wrapper div:first-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.3rem;
+  background: #680cbb;
+  width: 5rem;
+  height: 94%;
+  left: 2px;
+  border-radius: 7px 0 0 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.add-expense-btn-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+
+button.add-expense-btn {
+  background: linear-gradient(to bottom, #680cbb, #58099f);
+  border: 1px solid #ffffff00;
+  outline: 0;
+  font-size: 1.5rem;
+  max-width: 200px;
+  width: 100%;
+  height: 52px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 10px 7px 14px -11px, inset 5px 5px 17px -16px black;
+  transition: all 0.3s;
+}
+
+button.add-expense-btn:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width:480px) {
+  .expense-form-wrapper>form:first-child {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .add-expense-btn-div {
+    justify-content: center;
+  }
+
+  .filter-div-wrapper {
+    margin: 4rem 0 3rem;
+  }
+}

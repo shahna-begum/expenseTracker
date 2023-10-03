@@ -1,0 +1,156 @@
+.expense-item-wrapper {
+  max-height: 561px;
+  overflow-y: auto;
+}
+
+.expense-item-wrapper::-webkit-scrollbar {
+  width: 10px;
+  background: #221f1f00;
+  border-radius: 45px;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.expense-item-wrapper::-webkit-scrollbar-thumb {
+  background: #7019beba;
+  border-radius: 45px;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.expense-item-wrapper:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+
+.expense-item-wrapper:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.card>div {
+  display: grid;
+  grid-template-columns: 18% 54% 20%;
+  justify-content: center;
+  align-items: center;
+  background: #221f1f;
+  border-radius: 16px;
+  padding: 1rem;
+  gap: 4%;
+  margin-bottom: 2rem;
+}
+
+.card:last-child>div {
+  margin-bottom: 0rem;
+}
+
+.card>div>div:first-child>div {
+  background: black;
+  border-radius: 14px;
+  text-align: center;
+  color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.9;
+  border: 3px solid #9594947a;
+  max-width: 168px;
+}
+
+.card>div>div:first-child>div>h3 {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: #858585;
+}
+
+.card>div>div:first-child>div>h4 {
+  margin: 0.4rem;
+  font-size: 2rem;
+}
+
+.card>div>div:first-child>div>h1 {
+  margin-top: 0;
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+
+h1.expense-name {
+  color: white;
+  opacity: 0.9;
+  font-size: 2rem;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card>div>div:first-child>div:nth-child(3) {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+button.expense-btn {
+  font-size: 1.7rem;
+  max-width: 124px;
+  width: 100%;
+  padding: 1rem 0.3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #a19f9fc4;
+  background: #700acd;
+  color: white;
+  font-weight: bold;
+  opacity: 0.9;
+  transition: all 0.3s;
+  box-shadow: 0px 8px 40px -4px #680cbb;
+}
+
+.expense-btn:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width:480px) {
+  .card>div>div:first-child>div {
+    background: #c1c1c13b;
+    color: #efefef;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    opacity: 0.9;
+    border: 3px solid #95949400;
+    max-width: 100%;
+    width: fit-content;
+    padding: 0 1rem;
+  }
+
+  .card>div {
+    grid-template-columns: auto;
+    justify-content: initial;
+    gap: 0%;
+  }
+
+  .card>div>div:first-child>div>h3 {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    margin-top: 0rem;
+  }
+
+  .card>div>div:first-child>div>h4 {
+    font-size: 1.5rem;
+  }
+
+  .card>div>div:first-child>div>h1 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  button.expense-btn {
+    font-size: 1.3rem;
+    max-width: 106px;
+    padding: 0.6rem 0.3rem;
+  }
+}

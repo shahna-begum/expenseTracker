@@ -1,0 +1,41 @@
+.chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #221f1f;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    gap: 4rem;
+    overflow: auto;
+}
+
+.chart-bar--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart-inner {
+    height: 142px;
+    background: black;
+    border-radius: 28px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 13px;
+}
+
+.chart-height {
+    position: absolute;
+    width: 100%;
+    background: #680cbb;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset -5px -6px 15px -10px #ffffffba;
+    transition: all .3s;
+}
